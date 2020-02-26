@@ -10,6 +10,11 @@ public enum GKC {
     public enum SK {
     
         open class Scene: SKScene {
+            
+            // Accessibility
+            public var testableNodes: [SKNode] = []
+            public var accessibleElements: [UIAccessibilityElement] = []
+            
             #if !os(macOS)
             public var viewController: UIViewController?
             #endif
